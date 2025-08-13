@@ -124,11 +124,114 @@ body {
     opacity: 1;
     gap: 37px;
     flex-wrap: wrap;
-    
-    
 }
 .logo-sponsor img {
   max-width: 175px;
   height: auto;
 }
+.trip-planning-section {
+    position: absolute;
+    width: 1520px;
+    height: 720px;
+    top: 1483px;
+    left: 104px;
+    gap: 90px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
 
+.trip-planning-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.title {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    margin: 0;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 501px;
+    height: 58px;
+    color: #000000;
+}
+
+.subtitle {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    margin: 0;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 533px;
+    height: 29px;
+    color: #404040;
+}
+
+.view-all-link {
+    position: absolute;
+    left:1274px;
+    top:19px;
+    bottom: 19px;
+    padding: 20px 32px;
+    border: 1px solid #4169E1;
+    border-radius: 40px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    width: 214px;
+    height: 29px;
+    color: #4169E1;
+}
+.view-all-link:hover {
+    background-color: #4169E1;
+    color: #FFFFFF;
+}
+.trip-planning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 490px); /*tạo 3 cột với chiều rộng 490*/
+    gap: 28px;
+    justify-content: center;
+    margin-top:20px;
+    width:1520px;
+    height: 523px;
+}
+
+.trip-planning-card {
+    width: 490px; 
+    height: 453px; 
+    border-radius: 32px; 
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trip-planning-card img {
+    width: 100%;
+    height: calc(100% - 43px);
+    object-fit: cover;
+    border-radius: 32px;
+}
+.trip-planning-card span {
+    width: 368px; 
+    height: 43px;
+    opacity: 1;
+    font-family: "Urbanist", sans-serif; 
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    letter-spacing: 0%;
+    color: #000000;
+    padding:2px ;
+    text-align: left;
+}
