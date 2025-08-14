@@ -323,8 +323,97 @@ body {
 }
 
 
+.recent-searches-section {
+    position:absolute;
+    width: 1918px;
+    height: 284px;
+    top: 3260px;
+    left: 104px;
+    gap: 64px;
+    opacity: 1;
+    box-sizing: border-box;
+}
 
+.recent-searches-header {
+    margin-bottom: 64px;
+}
 
+.recent-searches-title {
+    font-family: "Urbanist";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#000000;
+    width: 466px;
+    height: 58px;
+}
 
+.recent-searches-subtitle {
+   font-family: "Urbanist";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #404040;
+    width: 502px;
+    height: 29px;
+    margin-top:20px;
+}
+.recent-searches{
+    display: flex;
+    gap:31px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.search-card{
+    display: flex;
+    align-items: center;
+    width: 257px;
+    height: 113px;
+    padding: 24px 40px 24px 10px;
+    border: 1.5px solid #A0A0A0;
+    border-radius: 14px;
+    cursor: pointer;
+   
+}
+.search-text {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0; /* ko cho khung co lại*/
+    
+}
+.search-text strong{
+    font-family: "Urbanist";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 121px;
+    height: 29px;
+    color:#000000;
+    margin-bottom: 12px;
+    white-space: nowrap;
+    width:100%;
+}
+.search-text p{
+    font-family: "Urbanist";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 98px;
+    height: 24px;
+    color: #5B5B5B;
+    width:100%;
+}
+.search-icon{
+    width: 32px;
+    height: 32px;
+    margin:19.17px 29.33px 19.17px 5.33px;
+}
     
 
