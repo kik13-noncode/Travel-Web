@@ -193,7 +193,6 @@ body {
 }
 .view-all-link:hover {
     background-color: #4169E1;
-    color: #FFFFFF;
 }
 .trip-planning-grid {
     display: grid;
@@ -496,3 +495,209 @@ body {
     margin-top:14px;
 }
 
+.top-travel-section {
+    position: absolute;
+    width: 1520px;
+    height: 1870px;
+    top: 4601px;
+    left: 104px;
+    gap: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+}
+.top-travel-header{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+.top-travel-title{
+    font-family: "Urbanist";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#000000;
+
+}
+.top-travel-subtitle{
+    font-family: "Urbanist";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#404040;
+}
+.top-travel-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap:95px;
+    width: 1520px;
+    height: 1673px;
+}
+.top-travel-card{
+    display:flex;
+    width: 744px;
+    position: relative;
+    flex-direction: column;
+}
+.top-travel-card img{
+    display:block;
+    width: 100%;
+    height: calc(100% - 43px);
+    object-fit: cover;
+    border-radius: 32px;
+}
+.top-travel-card-content {
+    position: relative;
+    padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    width: 744px;
+}
+.top-travel-card-meta {
+    width: 744px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.location {
+    font-family: "Urbanist";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+
+}
+.meta-right {
+    display: flex;
+    gap: 39px;
+    align-items: center;
+}
+.date {
+    font-family: "Urbanist";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+}
+.read-time {
+    font-family: "Urbanist";
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+}
+.top-travel-card-title{
+    font-family: "Urbanist";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top:20px;
+    margin-bottom:24px;
+    color:#000000;
+}
+.top-travel-card-description{
+    font-family: "Urbanist";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#000000;
+
+}
+.pagination-container {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 482px;
+    height: 57px;
+    top: 6614px;
+    left: 623px;
+    gap: 32px;
+    opacity: 1;
+
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 16px; 
+    height: 57px;
+    padding: 0;
+}
+
+.pagination-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px; 
+    height: 57px; 
+    border: 1px solid #5B5B5B;
+    border-radius: 8px;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+    text-decoration-line: none; /* bỏ dấu gạch chân dưới số*/
+
+}
+
+.pagination-link.active {
+    background-color: #4169E1;
+    color: #FFFFFF;
+    border-color: #4169E1;
+}
+
+
+.pagination-dot {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+}
+.footer{
+   display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: #4169E1;
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+.footer-logo{
+    position:absolute;
+    width: 1728px;
+    height: 458px;
+    top: 6937px;
+    background: #4169E1;
+   
+}
+.footer-logo img {
+    position:absolute;
+    top:139px;
+    right:790.5px;
+    bottom:199px;
+    width: 147px;
+    height: 120px;
+    
+}
+.footer-copyright {
+    margin-left:655px;
+    margin-top:291px;
+    font-family: "Urbanist";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+    width: 418px;
+    height: 29px;
+    
+}
