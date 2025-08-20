@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="../destination/stylesDes.css" />
+
+    <title>Destination</title>
+</head>
+<body>
+    <div class="container-des">
+        <div class="background-image-des">
+            <img src="/Travel-Web/image/background_des.png" alt="background-image"/>
+            <div class="overlay-des">
+                <div class="logo-des">
+                    <img src="/Travel-Web/image/logoPage.png" alt="Travel Pulse Logo" />
+                </div>
+                
+                <nav class="menu-des">
+                    <a href="../other-pages/destination/destination.html">Destination</a>
+                    <a href="../other-pages/stories/stories.html">Stories</a>
+                    <a href="../other-pages/reviews/review.html">Reviews</a>
+                </nav>
+                <div class="main-text-layout-des">
+                    <h1 class="main-text-des">Discovering the wonders of our planet, one adventure at a time </h1>           
+                </div>
+            </div>
+        </div>
+        <div class="search-container" aria-label="Search form container">
+            <div class="search-input-container">
+                <input
+                    type="search"
+                    placeholder="Search for places, hotels or restaurants"
+                    aria-label="Search for places, hotels or restaurants"
+                />
+                <!-- Biểu tượng kính lúp cho ô tìm kiếm -->
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                </svg>
+            </div>
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label for="place-type" class="filter-label">Filter by type of place</label>
+                    <select id="place-type" name="place-type" aria-label="Filter by type of place">
+                        <option>All Types</option> 
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort-by" class="filter-label">Sort by</label>
+                    <select id="sort-by" name="sort-by" aria-label="Sort by">
+                        <option>Most Popular</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
