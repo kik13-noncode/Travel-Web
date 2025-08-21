@@ -328,5 +328,127 @@ select {
     height: 29px;
     
 }
+@media (max-width: 768px) {
+    .container-des {
+        display:flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100vw;
+        height: auto;
+        position: static;
+    }
+    .background {
+        position: relative;
+        width: 428px;
+        height: 1117px;
+    }  
+    .overlay-des {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+        margin: 0;
+    }
+    .logo-des {
+        position: absolute;
+        margin-right: 0;
+        margin-left: 0;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+    .menu-des {
+        display:none;
+        position: static;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    .main-text-layout-des,
+    .menu-des a {
+        display:none;
+    }
+    .search-container{
+        width:100%;
+        position: absolute;
+        top: 920px;
+        left:22px;
+    }
+    .sreach-input-container {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+    .filters-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .des-grid {
+        position:static;
+        display: grid; 
+        grid-template-columns: 1fr;
+        gap: 119px; /* Đặt khoảng cách giữa các hàng */
+        margin-top: 50%;
+        margin-left: 22px;
+    } 
+    .des-card img{
+        width: 100%; 
+        height: auto; 
+        max-width: 70%; /*giới hạn lại để không bị tràn container*/
+    }
+    .des-card span,
+    .des-card p {
+        text-align: center;
+    }
+    .pagination-container-des{
+        position: static;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 79px;
+        margin-left: 25px;
+    }
+    .footer {
+        position: static;
+        background: #4169E1;
+        margin-top: 207px;
+        z-index: 1;
+        height:364px;
+        width:768px;
+
+    }
+    .footer-logo-des{
+        position: static;
+        margin-top: 207px;
+        width:80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 22px;
+        background: #4169E1;
+        
+
+    }
+    .footer-logo-des img {
+        position: static;
+        display: block;
+        margin: 30px auto 10px auto;
+    }
+    .footer-copyright-des{
+        width: 90%; 
+        text-align: center;
+        margin: 0 auto 20px auto;
+    
+       
+  
+    }
+
+}  
+
 
 
