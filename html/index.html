@@ -14,9 +14,12 @@
 <body>
     <div class="container">
         <div class="background-image">
-            <img src="../image/landingpage.png" alt="background-image"/>
-            <div class="overlay">
-                <div class="logo">
+            <picture>
+                <source srcset="../image/landingpagemobile.png" media="(min-width: 768px)" />
+                <img src="../image/landingpage.png" alt="background-image"/>
+            </picture>
+                <div class="overlay">
+                    <div class="logo">
                     <img src="../image/logoPage.png" alt="Travel Pulse Logo" />
                 </div>
                 
@@ -53,7 +56,7 @@
                 <h2 class="title">Plan your best trip ever</h2>
                 <p class="subtitle">Making the Most of Your Travel Experience in 2023</p>
             </div>
-            <a href="#" class="view-all-link">View All Destination</a>
+            <a href="../other-pages/destination/destination.html" class="view-all-link">View All Destination</a>
            <div class="trip-planning-grid">
             <div class="trip-planning-card">
                 <img src="../image/croatia.jpg" alt="Croatia">
@@ -139,8 +142,8 @@
 
         <section class="locations-based-section">
             <div class="locations-based-header">
-                <h2 class="locations-based-title">Top Locations to Explore</h2>
-                <p class="locations-based-subtitle">Here are some of the most visited places in 2023</p>
+                <h2 class="locations-based-title">Location based Searches</h2>
+                <p class="locations-based-subtitle">Check out fun places based on your searches</p>
             </div>
              
            <div class="locations-based-grid">

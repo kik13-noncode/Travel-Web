@@ -735,14 +735,14 @@ body {
 @media (max-width: 768px) {
     .container {
         width: 100%;
-        height: auto;
         position: static;
+        height: auto;
     }
     .background {
-    position: relative;
-    width: 100vw;
-    height: 1117px;
-}  
+        position: relative;
+        width: 100vw;
+        height: 1117px;
+    }  
     .overlay {
         position: static;
         width: 100%;
@@ -777,8 +777,8 @@ body {
         color: #121212;
     }
     
-     .menu-toggle-btn {
-        display: flex;
+    .menu-toggle-btn {
+        display: block;
         position: fixed;
         flex-direction: column;
         justify-content: space-around;
@@ -815,13 +815,6 @@ body {
 
     .main-text-layout {
         display:none;
-        position: static;
-        width: 90%;
-        height: auto;
-        top: 0;
-        left: 0;
-        margin: 20px auto;
-        text-align: center;
     }
     .container-sponsor {
         position: static;
@@ -846,12 +839,14 @@ body {
     .trip-planning-section,
     .top-locations-section,
     .recent-searches-section,
-    .locations-based-section,
-    .top-travel-section {
+    .locations-based-section{
         position: static;
         width: 90%;
         height: auto;
         margin: 40px auto;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .trip-planning-header,
     .top-locations-header,
@@ -863,30 +858,43 @@ body {
         height: auto;
         gap: 10px;
     }
-    .title, .subtitle {
+    .title, 
+    .subtitle,
+    .top-locations-title,
+    .top-locations-subtitle,
+    .top-travel-title,
+    .top-travel-subtitle,
+    .locations-based-title,
+    .locations-based-subtitle {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
-    .view-all-link {
-        position: static;
-        margin-top: 15px;
-    }
+    
     .trip-planning-grid,
     .top-locations-grid,
-    .top-travel-grid,
-    .locations-based-grid {
-        grid-template-columns: 1fr;
-        width: 100%;
+    .recent-searches,
+    .locations-based-grid{
+        display: flex;
+        overflow-x: auto;/*cho cuộn ngang*/
+        justify-content: flex-start;
+        width: 100%; 
         height: auto;
         gap: 20px;
-        margin-top: 20px;
+        margin-top: 20px; 
+        flex-wrap: nowrap /* không cho xuống dòng */
     }
     .trip-planning-card,
     .top-locations-card,
-    .top-travel-card,
+    .search-card,
     .locations-based-card {
         width: 100%;
         height: auto;
+        flex-shrink:0;
+        min-width:600px;
+    }
+    .recent-searches-header{
+        align-self:flex-start;
+        text-align: left;
     }
     .recent-searches-list a {
         margin-right: 5px;
@@ -900,6 +908,47 @@ body {
         width: 100%;
         height: auto;
         margin-top: 20px;
+    }
+    /*
+    .locations-based-card img{
+        width: 100%;
+        object-fit: cover;
+    }
+    */
+    .top-travel-section {
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .top-travel-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .top-travel-card {
+        width: 100%;
+        height: auto;
+        flex-shrink: 0;
+    }
+    .top-travel-card img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 32px;
+        max-width: 100%;
+    }
+    .view-all-link {
+        position: static;
+        margin-top: 35px;
+        align-self: center;
+        width:auto;
     }
     /*đặt footer riêng cho moblie view vì chỉnh sửa chung web view bị xung đột*/
     .footer {
