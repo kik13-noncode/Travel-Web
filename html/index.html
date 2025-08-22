@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
 
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/styleMenuMobile.css" />
     <title>Travel Pulse</title>
+   
 </head>
 
 <body>
@@ -22,15 +24,20 @@
                     <div class="logo">
                     <img src="../image/logoPage.png" alt="Travel Pulse Logo" />
                 </div>
-                
-                <!--tạo thanh menu cho mobile
-                <button class="menu-toggle" aria-label="Toggle menu">
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
+                <!-- Mobile Menu -->
+                <button class="hamburger-menu" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
-                -->
+                <nav class="mobile-menu">
+                    <a href="../other-pages/destination/destination.html">Destination</a>
+                    <a href="../other-pages/stories/stories.html">Stories</a>
+                    <a href="../other-pages/reviews/review.html">Reviews</a>
+                </nav>
                 
+                
+                <!-- Desktop Menu -->
                 <nav class="menu">
                     <a href="../other-pages/destination/destination.html">Destination</a>
                     <a href="../other-pages/stories/stories.html">Stories</a>
@@ -274,7 +281,7 @@
             </div>
         </footer>
         
-        
+    <script src="../javascript/menuToggle.js"></script> 
     </body>
         
     </html>
