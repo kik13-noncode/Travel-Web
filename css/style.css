@@ -43,7 +43,7 @@ body {
     
 }
 .logo img {
-    width: 97px;
+    width: 100%;
     height: 80px;
     max-width: 100%;
     height:auto;
@@ -729,9 +729,13 @@ body {
   .footer-content {
     white-space: nowrap;
   }
+  .hamburger-menu,
+    .mobile-menu {
+    display: none; /* Ẩn nút hamburger và menu khi ở dạng HD*/
+}
 }
 
-/* Media Queries cho các thiết bị có độ phân giải nhỏ hơn hoặc bằng 768px */
+/* Media Queries cho các thiết bị có độ phân giải <= 768px */
 @media (max-width: 768px) {
     .container {
         width: 100%;
@@ -754,64 +758,17 @@ body {
         margin: 0;
     }
     .logo {
-        position: static;
-        margin-right: 0;
-        margin-left: 0;
+        position: absolute;
+        margin-top: 48px;
+        margin-left: 22px;
         top: 0;
         left: 0;
         text-align: center;
     }
+    
     .menu {
-        display:none;
-        position: static;
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-top: 15px;
+        display: none; /* Ẩn menu mặc định trên mobile */
     }
-    .menu a {
-        display:none;
-        font-size: 16px;
-        color: #121212;
-    }
-    
-    .menu-toggle-btn {
-        display: block;
-        position: fixed;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 30px;
-        height: 30px;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        z-index: 100;
-        top:57px;
-        right:22px;
-    }
-    .menu-toggle-btn .hamburger {
-        width: 100%;
-        height: 3px;
-        background-color: #000;
-    }
-    .menu .menu-open {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: #fff;
-        z-index: 50;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-    
 
     .main-text-layout {
         display:none;

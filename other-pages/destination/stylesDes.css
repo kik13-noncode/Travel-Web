@@ -328,6 +328,13 @@ select {
     height: 29px;
     
 }
+@media(min-width: 1280px){
+    .hamburger-menu-des,
+    .mobile-menu-des {
+    display: none; /* Ẩn nút hamburger và menu khi ở dạng HD*/
+    }
+
+}
 @media (max-width: 768px) {
     .container-des {
         display:flex;
@@ -354,22 +361,13 @@ select {
     }
     .logo-des {
         position: absolute;
-        margin-right: 0;
-        margin-left: 0;
+        margin-top: 48px;
+        margin-left:22px;
         top: 0;
         left: 0;
         text-align: center;
     }
-    .menu-des {
-        display:none;
-        position: static;
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin-top: 15px;
-    }
+
     .main-text-layout-des,
     .menu-des a {
         display:none;

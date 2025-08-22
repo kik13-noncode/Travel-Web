@@ -1,0 +1,54 @@
+@media (max-width: 768px) {    
+    .hamburger-menu {
+        position: fixed;
+        top: 57px;
+        right: 100px;
+        z-index: 1001;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background: #333;
+        border-radius: 2px;
+    }
+
+    /* Thanh menu dạng dropdown*/
+    .mobile-menu {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 250px;
+        min-width: 200px;
+        height: 100%;
+        background: #8B8989;
+        box-shadow: 0 4 12px rgba(0, 0, 0, 0.20);
+        display: none;
+        flex-direction: column;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    .mobile-menu a {
+        text-decoration: none;
+        color: black;
+        margin: 15px 0;
+        font-size: 18px;
+        }
+
+    .mobile-menu a:hover {
+        color: #828282;
+    }
+
+    /* Khi mở menu */
+    .mobile-menu.active {
+        display:flex;
+    }
+}
