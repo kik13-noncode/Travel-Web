@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
 
     <link rel="stylesheet" href="../destination/stylesDes.css" />
+    <link rel="stylesheet" href="../../css/styleMenuMobile.css" />
 
     <title>Destination</title>
 </head>
@@ -20,7 +21,19 @@
                     <img src="/Travel-Web/image/logoPage.png" alt="Travel Pulse Logo" />
                 </div>
                 
-                <nav class="menu-des">
+                <!-- Mobile Menu -->
+                <button class="hamburger-menu" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="mobile-menu">
+                    <a href="../other-pages/destination/destination.html">Destination</a>
+                    <a href="../other-pages/stories/stories.html">Stories</a>
+                    <a href="../other-pages/reviews/review.html">Reviews</a>
+                </nav>
+
+                <nav class="menu">
                     <a href="../other-pages/destination/destination.html">Destination</a>
                     <a href="../other-pages/stories/stories.html">Stories</a>
                     <a href="../other-pages/reviews/review.html">Reviews</a>
@@ -155,5 +168,6 @@
         </footer>
 
     </div>
+    <script src="/Travel-Web/javascript/menuToggle.js"></script>
 </body>
 </html>
