@@ -686,53 +686,53 @@ body {
     
 }
 @media (min-width: 1280px) {
-  .menu a {
-    white-space: nowrap;
-  }
-  /* giữ cho logo sponsor luôn nằm trên 1 dòng */
-  .logos-sponsor {
-    flex-wrap: nowrap !important;
-  }
-  /* cho thẻ là cột linh hoạt*/
-  .trip-planning-grid,
-  .top-locations-grid {
-    grid-template-columns: repeat(3, minmax(300px, 1fr)) !important;
-  }
-  /* hình không bị co lại  */
-  .trip-planning-card,
-  .top-locations-card,
-  .locations-based-card {
-    min-width: 300px;
-    flex-shrink: 0;
-  }
-  /* chữ và thẻ không bị xuống dòng */
-  .trip-planning-card span,
+    .menu a {
+        white-space: nowrap;
+    }
+    /* giữ cho logo sponsor luôn nằm trên 1 dòng */
+    .logos-sponsor {
+        flex-wrap: nowrap !important;
+    }
+    /* cho thẻ là cột linh hoạt*/
+    .trip-planning-grid,
+    .top-locations-grid {
+        grid-template-columns: repeat(3, minmax(300px, 1fr)) !important;
+    }
+    /* hình không bị co lại  */
+    .trip-planning-card,
+    .top-locations-card,
+    .locations-based-card {
+        min-width: 300px;
+        flex-shrink: 0;
+    }
+    /* chữ và thẻ không bị xuống dòng */
+    .trip-planning-card span,
     .top-locations-card p,
-  .locations-based-card p {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; /* cắt bớt nội dung thành dấu "..."*/
-  }
-  /* đặt cho thanh đã tìm kiếm nằm 1 dòng  */
-  .recent-searches {
-    flex-wrap: nowrap !important;
-    overflow-x: auto;
-  }
-  .search-card {
-    flex: 0 0 auto !important;
-  }
+    .locations-based-card p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; /* cắt bớt nội dung thành dấu "..."*/
+    }
+    /* đặt cho thanh đã tìm kiếm nằm 1 dòng  */
+    .recent-searches {
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+    }
+    .search-card {
+        flex: 0 0 auto !important;
+    }
 
-  .top-travel-grid {
-    grid-template-columns: repeat(2, minmax(450px, 1fr)) !important;
-  }
-  /* định dạng chân trang không cắt dòng*/
-  .footer-content {
-    white-space: nowrap;
-  }
-  .hamburger-menu,
+    .top-travel-grid {
+        grid-template-columns: repeat(2, minmax(450px, 1fr)) !important;
+    }
+    /* định dạng chân trang không cắt dòng*/
+    .footer-content {
+        white-space: nowrap;
+    }
+    .hamburger-menu,
     .mobile-menu {
-    display: none; /* Ẩn nút hamburger và menu khi ở dạng HD*/
-}
+        display: none; /* Ẩn nút hamburger và menu khi ở dạng HD*/
+    }
 }
 
 /* Media Queries cho các thiết bị có độ phân giải <= 768px */
@@ -765,14 +765,11 @@ body {
         left: 0;
         text-align: center;
     }
-    
+    .main-text-layout,
     .menu {
         display: none; /* Ẩn menu mặc định trên mobile */
     }
 
-    .main-text-layout {
-        display:none;
-    }
     .container-sponsor {
         position: static;
         width: 100%;
