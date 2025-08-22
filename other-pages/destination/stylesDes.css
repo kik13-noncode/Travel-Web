@@ -397,7 +397,7 @@ select {
     .des-card img{
         width: 100%; 
         height: auto; 
-        max-width: 70%; /*giới hạn lại để không bị tràn container*/
+        max-width: 90%; /*giới hạn lại để không bị tràn container*/
     }
     .des-card span,
     .des-card p {
